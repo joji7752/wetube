@@ -23,6 +23,7 @@ const betweenHome = (req, res, next) => {
 
 app.use(betweenHome);
 **/
+app.set ('view engine', "pug");
 app.use(cookieParser()); //쿠키전달받아서 사용할 수 있도록 만들어주는 미들웨어 - 사용자 인증같은 곳에서 쿠키 검사할 때 필요
 app.use(bodyParser.json()); //사용자가 웹사이트로 전달하는 정보들을 검사하는 미들웨어 - request 정보에서 form 이나 json 형태로 된 body를 검사함
 app.use(bodyParser.urlencoded({extended:true})); 
