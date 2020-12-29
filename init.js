@@ -1,4 +1,4 @@
-import app from "./app";
+import app from "./app";//app.js에서 exprees()를 export한걸 받아서 사용한다.
 
 const PORT = 4000;
 
