@@ -4,7 +4,7 @@ import morgan from "morgan";
 import helmet from "helmet";
 import cookieParser from "cookie-parser";
 import bodyParser from "body-parser";
-import { localMiddleware, localsMiddleware } from "./middlewares"; //알파벳순으로 임포트하는게 좋은 습관 m이 r 보다 위로
+import { localsMiddleware } from "./middlewares"; //알파벳순으로 임포트하는게 좋은 습관 m이 r 보다 위로
 import routes from "./routes";
 import userRouter from "./routers/userRouter";
 import videoRouter from "./routers/videoRouter";
