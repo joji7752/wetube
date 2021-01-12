@@ -4,7 +4,7 @@ export const videos = [
           title: "Video awesome",
           description: "This is example",
           view: 24,
-          videoFile: "https://archive.org/details/BigBuckBunny_124",
+          videoFile: "https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4",
           creator: {
                id: 1212,
                name:"yeongji",
@@ -16,7 +16,7 @@ export const videos = [
           title: "Video 2",
           description: "This is example",
           view: 24,
-          videoFile: "https://archive.org/details/BigBuckBunny_124",
+          videoFile: "https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4",
           creator: {
                id: 1212,
                name:"yeongji",
@@ -28,7 +28,7 @@ export const videos = [
           title: "Video 3",
           description: "This is example",
           view: 24,
-          videoFile: "https://archive.org/details/BigBuckBunny_124",
+          videoFile: "https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4",
           creator: {
                id: 1212,
                name:"yeongji",
@@ -40,7 +40,7 @@ export const videos = [
           title: "Video 4",
           description: "This is example",
           view: 24,
-          videoFile: "https://archive.org/details/BigBuckBunny_124",
+          videoFile: "https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4",
           creator: {
                id: 1212,
                name:"yeongji",

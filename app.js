@@ -24,7 +24,7 @@ const betweenHome = (req, res, next) => {
 
 app.use(betweenHome);
 **/
-app.use(helmet()); // application이 더 안전하도록 해줌
+app.use( helmet({ contentSecurityPolicy: false })) // application이 더 안전하도록 해줌
 app.set ('view engine', "pug");
 app.use(cookieParser()); //쿠키전달받아서 사용할 수 있도록 만들어주는 미들웨어 - 사용자 인증같은 곳에서 쿠키 검사할 때 필요
 app.use(bodyParser.json()); //사용자가 웹사이트로 전달하는 정보들을 검사하는 미들웨어 - request 정보에서 form 이나 json 형태로 된 body를 검사함
@@ -35,6 +35,7 @@ app.use(localsMiddleware); //globalRouter,userRouter 보다 위에 있어야함 
 app.use(routes.home, globalRouter);
 app.use(routes.users, userRouter);
 app.use(routes.videos, videoRouter);
+
 
 // app.listen(PORT, handleListening);
 
