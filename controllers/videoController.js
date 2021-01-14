@@ -7,7 +7,7 @@ res.render("home", { pageTitle: "Home", videos });
 export const search = (req, res) => {
      // const searchingBy = req.query.term; ECMAScript, ES6이전의 코딩방식
      const {query:{term : searchingBy}} = req;
-     res.render("search", { pageTitle: "Search", searchingBy });
+     res.render("search", { pageTitle: "Search", searchingBy, videos });
 }
 
 export const upload = (req, res) => res.render("upload", { pageTitle: "Upload" });
